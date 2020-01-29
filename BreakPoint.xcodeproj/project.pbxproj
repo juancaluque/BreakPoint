@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9133CE2E1939EA2885C58218 /* Pods_BreakPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BAF0F089D3A45D1D05B449 /* Pods_BreakPoint.framework */; };
 		A41E8DD023E208DA00C3287D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E8DCF23E208DA00C3287D /* AppDelegate.swift */; };
 		A41E8DD223E208DA00C3287D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E8DD123E208DA00C3287D /* SceneDelegate.swift */; };
 		A41E8DD423E208DA00C3287D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E8DD323E208DA00C3287D /* FirstViewController.swift */; };
@@ -14,9 +15,13 @@
 		A41E8DD923E208DA00C3287D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41E8DD723E208DA00C3287D /* Main.storyboard */; };
 		A41E8DDB23E208E000C3287D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41E8DDA23E208E000C3287D /* Assets.xcassets */; };
 		A41E8DDE23E208E000C3287D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41E8DDC23E208E000C3287D /* LaunchScreen.storyboard */; };
+		A41E8DEB23E20BE900C3287D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A41E8DEA23E20BE900C3287D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		048F5F1373EAF2AD692314B8 /* Pods-BreakPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPoint.release.xcconfig"; path = "Target Support Files/Pods-BreakPoint/Pods-BreakPoint.release.xcconfig"; sourceTree = "<group>"; };
+		30BAF0F089D3A45D1D05B449 /* Pods_BreakPoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakPoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DECEF3AADD33AA2B3CC7FAC /* Pods-BreakPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPoint.debug.xcconfig"; path = "Target Support Files/Pods-BreakPoint/Pods-BreakPoint.debug.xcconfig"; sourceTree = "<group>"; };
 		A41E8DCC23E208DA00C3287D /* BreakPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41E8DCF23E208DA00C3287D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A41E8DD123E208DA00C3287D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		A41E8DDA23E208E000C3287D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A41E8DDD23E208E000C3287D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A41E8DDF23E208E000C3287D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A41E8DEA23E20BE900C3287D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9133CE2E1939EA2885C58218 /* Pods_BreakPoint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		486E55CD7756DA618746E221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DECEF3AADD33AA2B3CC7FAC /* Pods-BreakPoint.debug.xcconfig */,
+				048F5F1373EAF2AD692314B8 /* Pods-BreakPoint.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		55677BEC670130957FF70886 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30BAF0F089D3A45D1D05B449 /* Pods_BreakPoint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A41E8DC323E208D900C3287D = {
 			isa = PBXGroup;
 			children = (
 				A41E8DCE23E208DA00C3287D /* BreakPoint */,
 				A41E8DCD23E208DA00C3287D /* Products */,
+				486E55CD7756DA618746E221 /* Pods */,
+				55677BEC670130957FF70886 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +96,7 @@
 				A41E8DD723E208DA00C3287D /* Main.storyboard */,
 				A41E8DDC23E208E000C3287D /* LaunchScreen.storyboard */,
 				A41E8DDF23E208E000C3287D /* Info.plist */,
+				A41E8DEA23E20BE900C3287D /* GoogleService-Info.plist */,
 			);
 			path = BreakPoint;
 			sourceTree = "<group>";
@@ -117,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A41E8DE223E208E000C3287D /* Build configuration list for PBXNativeTarget "BreakPoint" */;
 			buildPhases = (
+				E31715FF84EB0C815EA00F00 /* [CP] Check Pods Manifest.lock */,
 				A41E8DC823E208DA00C3287D /* Sources */,
 				A41E8DC923E208DA00C3287D /* Frameworks */,
 				A41E8DCA23E208DA00C3287D /* Resources */,
+				BDEB1AD24B54AFB1F6023874 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,12 +199,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				A41E8DDE23E208E000C3287D /* LaunchScreen.storyboard in Resources */,
+				A41E8DEB23E20BE900C3287D /* GoogleService-Info.plist in Resources */,
 				A41E8DDB23E208E000C3287D /* Assets.xcassets in Resources */,
 				A41E8DD923E208DA00C3287D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDEB1AD24B54AFB1F6023874 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakPoint/Pods-BreakPoint-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakPoint/Pods-BreakPoint-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BreakPoint/Pods-BreakPoint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E31715FF84EB0C815EA00F00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BreakPoint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A41E8DC823E208DA00C3287D /* Sources */ = {
@@ -326,6 +399,7 @@
 		};
 		A41E8DE323E208E000C3287D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DECEF3AADD33AA2B3CC7FAC /* Pods-BreakPoint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +418,7 @@
 		};
 		A41E8DE423E208E000C3287D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 048F5F1373EAF2AD692314B8 /* Pods-BreakPoint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

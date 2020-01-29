@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>315120193716-8213r6sb1puerjvastcndvbctld2rhoq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.315120193716-8213r6sb1puerjvastcndvbctld2rhoq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDa3vJAUJ6g5-YlsXjC8BJsKaiCWR78Mdw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>315120193716</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.just.jukess.BreakPoint</string>
+	<key>PROJECT_ID</key>
+	<string>breakpoint115</string>
+	<key>STORAGE_BUCKET</key>
+	<string>breakpoint115.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:315120193716:ios:afb6d4dc7b8aceef2807e1</string>
+	<key>DATABASE_URL</key>
+	<string>https://breakpoint115.firebaseio.com</string>
+</dict>
+</plist>
