@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--AuthVC-->
         <scene sceneID="8Uy-4V-OEE">
             <objects>
-                <viewController id="ezZ-Pf-E8G" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthVC" id="ezZ-Pf-E8G" customClass="AuthVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z0c-GO-ty2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +97,7 @@
                                 <color key="textColor" red="0.5607843137254902" green="0.81176470588235294" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7v-Hs-Yym">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7v-Hs-Yym" customClass="ShadowView" customModule="BreakPoint" customModuleProvider="target">
                                 <rect key="frame" x="19.5" y="188" width="375" height="420"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gNA-5I-IZo">
@@ -185,10 +185,10 @@
             </objects>
             <point key="canvasLocation" x="-1307" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="1dm-pD-csu">
             <objects>
-                <viewController id="5ZU-dU-hAk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="5ZU-dU-hAk" customClass="LoginVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7px-ve-If9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,7 +204,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsy-hM-hDv">
                                 <rect key="frame" x="147" y="342" width="120" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="rVh-Na-g6B"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="rVh-Na-g6B"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
                                 <state key="normal" title="SIGN IN">
@@ -220,7 +220,7 @@
                                         <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hkE-Fd-hol">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hkE-Fd-hol" customClass="InsetTextField" customModule="BreakPoint" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="334" height="50"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -230,7 +230,7 @@
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jr0-62-yG4">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jr0-62-yG4" customClass="InsetTextField" customModule="BreakPoint" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="155" width="334" height="45"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
