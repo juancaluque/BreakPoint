@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		A41E8DDB23E208E000C3287D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41E8DDA23E208E000C3287D /* Assets.xcassets */; };
 		A41E8DDE23E208E000C3287D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41E8DDC23E208E000C3287D /* LaunchScreen.storyboard */; };
 		A41E8DEB23E20BE900C3287D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A41E8DEA23E20BE900C3287D /* GoogleService-Info.plist */; };
+		A41E8DED23E217F000C3287D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E8DEC23E217F000C3287D /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A41E8DDD23E208E000C3287D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A41E8DDF23E208E000C3287D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A41E8DEA23E20BE900C3287D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A41E8DEC23E217F000C3287D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,6 @@
 				9DECEF3AADD33AA2B3CC7FAC /* Pods-BreakPoint.debug.xcconfig */,
 				048F5F1373EAF2AD692314B8 /* Pods-BreakPoint.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -134,6 +135,7 @@
 		A41E8DE923E209BA00C3287D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A41E8DEC23E217F000C3287D /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -258,6 +260,7 @@
 				A41E8DD423E208DA00C3287D /* FirstViewController.swift in Sources */,
 				A41E8DD023E208DA00C3287D /* AppDelegate.swift in Sources */,
 				A41E8DD223E208DA00C3287D /* SceneDelegate.swift in Sources */,
+				A41E8DED23E217F000C3287D /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
