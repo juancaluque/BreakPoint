@@ -10,13 +10,14 @@
 		9133CE2E1939EA2885C58218 /* Pods_BreakPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BAF0F089D3A45D1D05B449 /* Pods_BreakPoint.framework */; };
 		A41E8DD023E208DA00C3287D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E8DCF23E208DA00C3287D /* AppDelegate.swift */; };
 		A41E8DD223E208DA00C3287D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E8DD123E208DA00C3287D /* SceneDelegate.swift */; };
-		A41E8DD423E208DA00C3287D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E8DD323E208DA00C3287D /* FirstViewController.swift */; };
-		A41E8DD623E208DA00C3287D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E8DD523E208DA00C3287D /* SecondViewController.swift */; };
+		A41E8DD423E208DA00C3287D /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E8DD323E208DA00C3287D /* FeedVC.swift */; };
+		A41E8DD623E208DA00C3287D /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E8DD523E208DA00C3287D /* GroupsVC.swift */; };
 		A41E8DD923E208DA00C3287D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41E8DD723E208DA00C3287D /* Main.storyboard */; };
 		A41E8DDB23E208E000C3287D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41E8DDA23E208E000C3287D /* Assets.xcassets */; };
 		A41E8DDE23E208E000C3287D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41E8DDC23E208E000C3287D /* LaunchScreen.storyboard */; };
 		A41E8DEB23E20BE900C3287D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A41E8DEA23E20BE900C3287D /* GoogleService-Info.plist */; };
 		A41E8DED23E217F000C3287D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E8DEC23E217F000C3287D /* DataService.swift */; };
+		A47EB0CE23E46A5C00F44399 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47EB0CD23E46A5C00F44399 /* AuthService.swift */; };
 		A4940F1023E38C38009AFF74 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940F0F23E38C38009AFF74 /* AuthVC.swift */; };
 		A4940F1223E38C59009AFF74 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940F1123E38C59009AFF74 /* LoginVC.swift */; };
 		A4940F1423E38C95009AFF74 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940F1323E38C95009AFF74 /* InsetTextField.swift */; };
@@ -30,14 +31,15 @@
 		A41E8DCC23E208DA00C3287D /* BreakPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41E8DCF23E208DA00C3287D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A41E8DD123E208DA00C3287D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A41E8DD323E208DA00C3287D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A41E8DD523E208DA00C3287D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A41E8DD323E208DA00C3287D /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		A41E8DD523E208DA00C3287D /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		A41E8DD823E208DA00C3287D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A41E8DDA23E208E000C3287D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A41E8DDD23E208E000C3287D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A41E8DDF23E208E000C3287D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A41E8DEA23E20BE900C3287D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A41E8DEC23E217F000C3287D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		A47EB0CD23E46A5C00F44399 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A4940F0F23E38C38009AFF74 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		A4940F1123E38C59009AFF74 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A4940F1323E38C95009AFF74 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
@@ -115,8 +117,8 @@
 			children = (
 				A4940F1123E38C59009AFF74 /* LoginVC.swift */,
 				A4940F0F23E38C38009AFF74 /* AuthVC.swift */,
-				A41E8DD323E208DA00C3287D /* FirstViewController.swift */,
-				A41E8DD523E208DA00C3287D /* SecondViewController.swift */,
+				A41E8DD323E208DA00C3287D /* FeedVC.swift */,
+				A41E8DD523E208DA00C3287D /* GroupsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				A41E8DEC23E217F000C3287D /* DataService.swift */,
+				A47EB0CD23E46A5C00F44399 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -270,11 +273,12 @@
 			files = (
 				A4940F1623E38FCA009AFF74 /* ShadowView.swift in Sources */,
 				A4940F1023E38C38009AFF74 /* AuthVC.swift in Sources */,
-				A41E8DD623E208DA00C3287D /* SecondViewController.swift in Sources */,
+				A41E8DD623E208DA00C3287D /* GroupsVC.swift in Sources */,
 				A4940F1223E38C59009AFF74 /* LoginVC.swift in Sources */,
 				A4940F1423E38C95009AFF74 /* InsetTextField.swift in Sources */,
-				A41E8DD423E208DA00C3287D /* FirstViewController.swift in Sources */,
+				A41E8DD423E208DA00C3287D /* FeedVC.swift in Sources */,
 				A41E8DD023E208DA00C3287D /* AppDelegate.swift in Sources */,
+				A47EB0CE23E46A5C00F44399 /* AuthService.swift in Sources */,
 				A41E8DD223E208DA00C3287D /* SceneDelegate.swift in Sources */,
 				A41E8DED23E217F000C3287D /* DataService.swift in Sources */,
 			);
