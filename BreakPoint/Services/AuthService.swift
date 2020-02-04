@@ -12,23 +12,31 @@ import Firebase
 class AuthService {
     static let instance = AuthService()
     
-    func registerUser(withEmail email: String, andPassword password: String, createUserCompletion: @ escaping (_ status: Bool, _ error: Error?) -> ()) {
+    func registerUser(withEmail email: String, andPassword password: String, createUserCompletion: @escaping (_ status: Bool, _ error: Error?) -> ()) {
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
-            guard let user = authResult?.user else {
+            if error == nil {
+                guard let user = authResult?.user else {
+                    createUserCompletion(false, error)
+                    return
+                }
+                
+                let userData = ["provider": user.providerID, "email": user.email!] as [String : Any]
+                DataService.instace.createDBUser(uid: user.uid, userData: userData)
+                createUserCompletion(true, nil)
+            } else {
                 createUserCompletion(false, error)
-                return
+                print(error?.localizedDescription as Any)
             }
-            
-            let userData = ["provider": user.providerID, "email": user.email!] as [String : Any]
-            DataService.instace.createDBUser(uid: user.uid, userData: userData)
-            createUserCompletion(true, nil)
         }
     }
     
     func loginUser(withEmail email: String, andPassword password: String, loginUserCompletion: @escaping (_ status: Bool, _ error: Error?) -> ()) {
         Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
-            if error != nil {
-                    loginUserCompletion(true , nil)
+            if error == nil {
+                loginUserCompletion(true, nil)
+            } else {
+                loginUserCompletion(false, error)
+                print(error?.localizedDescription as Any)
             }
         }
     }

@@ -7,19 +7,26 @@
 //
 
 import UIKit
+import Firebase
 
 class AuthVC: UIViewController {
-
+   
+    // LIFECYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        print(String(describing: Auth.auth().currentUser?.email))
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        if Auth.auth().currentUser != nil{
+            dismiss(animated: true, completion: nil)
+        }
+    }
+        
+
     // @IBACTIONS
     @IBAction func emailBtnWasPressed(_ sender: Any) {
-        let loginVC = storyboard?.instantiateViewController(identifier: "LoginVC") as! LoginVC
-        present(loginVC, animated: true, completion: nil)
     }
     @IBAction func facebookBtnWasPressed(_ sender: Any) {
     }

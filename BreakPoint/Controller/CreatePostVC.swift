@@ -18,10 +18,18 @@ class CreatePostVC: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var sendBtn: UIButton!
     
+    // VARIABLES
+    var delegate: MessageReload? = nil
     
+    // LIFECYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
+        sendBtn.bindToKeyboard()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        emailLbl.text = Auth.auth().currentUser?.email
     }
     
     // @IBACTIONS
@@ -30,6 +38,10 @@ class CreatePostVC: UIViewController {
             sendBtn.isEnabled = false
             DataService.instace.uploadPost(withMessage: textView.text!, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil) { (success) in
                 if success {
+                    if self.delegate != nil {
+                        self.delegate?.updateMessage()
+                        print("UPDATEEE")
+                    }
                     self.sendBtn.isEnabled = true
                     self.dismiss(animated: true, completion: nil)
                 } else {
