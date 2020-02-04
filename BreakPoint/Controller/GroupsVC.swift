@@ -10,11 +10,15 @@ import UIKit
 
 class GroupsVC: UIViewController {
 
+    // OUTLETS
+    @IBOutlet weak var titleTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
+    // @IBACTIONS
 }
 
