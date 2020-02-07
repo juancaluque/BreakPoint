@@ -18,6 +18,10 @@
 		A41E8DEB23E20BE900C3287D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A41E8DEA23E20BE900C3287D /* GoogleService-Info.plist */; };
 		A41E8DED23E217F000C3287D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E8DEC23E217F000C3287D /* DataService.swift */; };
 		A44C6DBD23EB007600CB6166 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44C6DBC23EB007600CB6166 /* UserCell.swift */; };
+		A44C6DC523EDA1DA00CB6166 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44C6DC423EDA1DA00CB6166 /* GroupCell.swift */; };
+		A44C6DC723EDA5A200CB6166 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44C6DC623EDA5A200CB6166 /* Group.swift */; };
+		A44C6DC923EDDCAC00CB6166 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44C6DC823EDDCAC00CB6166 /* GroupFeedCell.swift */; };
+		A44C6DCB23EDDD1D00CB6166 /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44C6DCA23EDDD1D00CB6166 /* GroupFeedVC.swift */; };
 		A47EB0CE23E46A5C00F44399 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47EB0CD23E46A5C00F44399 /* AuthService.swift */; };
 		A47EB0D023E5CE3D00F44399 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47EB0CF23E5CE3D00F44399 /* MeVC.swift */; };
 		A47EB0D223E5D78D00F44399 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47EB0D123E5D78D00F44399 /* CreatePostVC.swift */; };
@@ -48,6 +52,10 @@
 		A41E8DEA23E20BE900C3287D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A41E8DEC23E217F000C3287D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		A44C6DBC23EB007600CB6166 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		A44C6DC423EDA1DA00CB6166 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		A44C6DC623EDA5A200CB6166 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		A44C6DC823EDDCAC00CB6166 /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
+		A44C6DCA23EDDD1D00CB6166 /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
 		A47EB0CD23E46A5C00F44399 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A47EB0CF23E5CE3D00F44399 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		A47EB0D123E5D78D00F44399 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 				A47EB0CF23E5CE3D00F44399 /* MeVC.swift */,
 				A47EB0D123E5D78D00F44399 /* CreatePostVC.swift */,
 				A47EB0F323E9B2F700F44399 /* CreateGroupsVC.swift */,
+				A44C6DCA23EDDD1D00CB6166 /* GroupFeedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +160,8 @@
 				A47EB0D523E6722A00F44399 /* UIViewExt.swift */,
 				A47EB0D723E85BC000F44399 /* FeedCell.swift */,
 				A44C6DBC23EB007600CB6166 /* UserCell.swift */,
+				A44C6DC423EDA1DA00CB6166 /* GroupCell.swift */,
+				A44C6DC823EDDCAC00CB6166 /* GroupFeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A47EB0D923E85CE300F44399 /* Message.swift */,
+				A44C6DC623EDA5A200CB6166 /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,8 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44C6DC923EDDCAC00CB6166 /* GroupFeedCell.swift in Sources */,
 				A47EB0D623E6722A00F44399 /* UIViewExt.swift in Sources */,
 				A4940F1623E38FCA009AFF74 /* ShadowView.swift in Sources */,
+				A44C6DC523EDA1DA00CB6166 /* GroupCell.swift in Sources */,
+				A44C6DC723EDA5A200CB6166 /* Group.swift in Sources */,
 				A4940F1023E38C38009AFF74 /* AuthVC.swift in Sources */,
 				A41E8DD623E208DA00C3287D /* GroupsVC.swift in Sources */,
 				A4940F1223E38C59009AFF74 /* LoginVC.swift in Sources */,
@@ -314,6 +329,7 @@
 				A41E8DD023E208DA00C3287D /* AppDelegate.swift in Sources */,
 				A47EB0D023E5CE3D00F44399 /* MeVC.swift in Sources */,
 				A47EB0DD23E8A5EC00F44399 /* MessageReload.swift in Sources */,
+				A44C6DCB23EDDD1D00CB6166 /* GroupFeedVC.swift in Sources */,
 				A47EB0D223E5D78D00F44399 /* CreatePostVC.swift in Sources */,
 				A47EB0CE23E46A5C00F44399 /* AuthService.swift in Sources */,
 				A47EB0DA23E85CE300F44399 /* Message.swift in Sources */,
